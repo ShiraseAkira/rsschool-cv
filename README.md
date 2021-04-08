@@ -1,1 +1,0 @@
-https://ShiraseAkira.github.io/rsschool-cv/cv
