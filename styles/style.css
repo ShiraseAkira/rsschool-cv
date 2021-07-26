@@ -1,0 +1,26 @@
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header,
+section,
+footer {
+  padding: 20px;
+  border: 1px solid #555555;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 200px;
+}
