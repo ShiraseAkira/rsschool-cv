@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="script.js"></script>
     <title>CV - Maxim Laptev</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <h1>CV<br>Maxim Laptev</h1>
-            <img src="img/avatar.jpg" alt="my avatar">
+            <h1>CV</h1>
+            <figure>
+                <img src="img/avatar.jpg" alt="my avatar">
+                <figcaption>Maxim Laptev</figcaption>
+            </figure>
         </header>
         <main>
             <section>
@@ -36,7 +43,16 @@
             </section>
             <section>
                 <h2>Code examples</h2>
-                <code>alert("Hello, World!")</code>
+                <pre><code class="javascript">function maxSum(root) {
+    if (!root) {
+        return 0;
+    }
+
+    const left = root.left ? maxSum(root.left) : 0;
+    const right = root.right ? maxSum(root.right) : 0;
+
+    return Math.max(left, right) + root.value;
+}</code></pre>
             </section>
             <section>
                 <h2>Experience</h2>
